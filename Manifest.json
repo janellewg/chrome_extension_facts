@@ -1,0 +1,25 @@
+{
+    "manifest_version" : 2,
+    "name": "Fact Me Baby",
+    "description": "This extension revolutionizes your tabular experience. Oh Tab",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "sample.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "tabCapture"
+    ],
+    "background": {
+        "scripts": ["walkingcat.js"],
+        "persistent": true
+    },
+    "chrome_url_overrides" : {
+        "newtab": "page.html"
+    },
+    "icons" : {
+        "48": "sample.png"
+  }
+}
